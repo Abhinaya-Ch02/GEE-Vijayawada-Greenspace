@@ -92,12 +92,6 @@ epics_project/
 
 ---
 
-## 👩‍💻 Contributors
-
-- 👩‍💻 **Abhinaya Chalamalasetti**
-- 👩‍💻 **Vemuri Nikshipta**
-- 👩‍💻 **Rajulapati Nandini**
----
 
 ## 🛠️ Tools & Technologies
 
@@ -111,10 +105,10 @@ epics_project/
 
 ---
 
+## 👩‍💻 Contributors
 
+- 👩‍💻 **Abhinaya Chalamalasetti**
+- 👩‍💻 **Vemuri Nikshipta**
+- 👩‍💻 **Rajulapati Nandini**
+---
 
-## 📜 License
-
-This project is part of the **EPICS initiative** at  
-🎓 *V. R. Siddhartha Engineering College (Autonomous)*  
-📚 Intended for academic and non-commercial use only.
