@@ -111,4 +111,13 @@ epics_project/
 - 👩‍💻 **Vemuri Nikshipta**
 - 👩‍💻 **Rajulapati Nandini**
 ---
+## 💬 Feedback & Contributions
 
+If you find this project useful or inspiring:
+
+- ⭐ Star the repo
+- 🍴 Fork and reuse it
+- 🛠️ Share your improvements
+- 💌 Reach out with suggestions!
+
+Let’s use Earth observation to protect Earth 🌎🌱
