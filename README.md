@@ -42,7 +42,7 @@ epics_project/
 ### 🗺️ Yearly LULC Maps (2019–2024) — Random Forest
 
 <p align="center">
-  <img src="Outputs/lulc_maps_rf_2019_2024.png" alt="LULC RF Maps" width="65%">
+  <img src="Outputs/lulc_maps_rf_2019_2024.png" alt="LULC RF Maps" width="60%">
 </p>
 
 ---
@@ -50,7 +50,7 @@ epics_project/
 ### 🧠 Yearly LULC Maps (2019–2024) — SVM
 
 <p align="center">
-  <img src="Outputs/lulc_maps_svm_2019_2024.png" alt="LULC SVM Maps" width="65%">
+  <img src="Outputs/lulc_maps_svm_2019_2024.png" alt="LULC SVM Maps" width="60%">
 </p>
 
 ---
