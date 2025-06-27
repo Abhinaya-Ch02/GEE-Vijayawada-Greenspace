@@ -5,126 +5,116 @@
 
 ---
 
-## 📌 Overview
+## 📌 Project Highlights
 
-This project analyzes the **temporal change in greenspace** across Vijayawada from 2019 to 2024.  
-We applied supervised classification models on Sentinel-2 images using:
-
-- 🧠 **Random Forest (RF)**
-- 🤖 **Support Vector Machine (SVM)**
-
-Each year’s image was processed individually for both models, followed by accuracy assessment and greenspace area extraction.
+- 📍 **Study Area:** Vijayawada, Andhra Pradesh, India  
+- 🛰️ **Imagery:** Sentinel-2 (cloud-free composites)  
+- 🧠 **Models Used:** Random Forest (RF) & Support Vector Machine (SVM)  
+- 🗂️ **Outputs:** Year-wise LULC & greenspace maps + area statistics  
+- 🧪 **Tools:** GEE, shapefiles, charts, visualizations
 
 ---
 
-## 🛰️ Methodology
+## 🛠️ Methodology
 
-1. **Study Area Definition**  
-   - Used shapefile of Vijayawada city as Area of Interest (AOI)
-
-2. **Image Selection**  
-   - Selected cloud-free Sentinel-2 imagery for each year
-
-3. **Preprocessing**  
-   - Image clipping, median composite, band selection
-
-4. **Classification**  
-   - Trained RF and SVM on manually labeled land cover points
-
-5. **Postprocessing**  
-   - Accuracy evaluation, confusion matrix, greenspace extraction
+1. 🗺️ AOI defined using shapefiles  
+2. 🛰️ Filtered Sentinel-2 SR imagery (Jan–Dec each year)  
+3. 🎯 Trained RF & SVM with labeled land cover classes  
+4. 🧼 Post-classification: accuracy assessment + charting  
+5. 🌱 Extracted greenspace mask + yearly summaries
 
 ---
 
-## 📁 Folder Structure
+## 📁 Project Structure
 
 ```
 epics_project/
-├── Main-Scripts/              # Year-wise GEE scripts (2019–2024)
-├── VIJAYAWADA_BOUNDARY/       # Shapefile components for AOI
-├── Outputs/                   # Combined LULC and Greenspace maps                    
-├── README.md
-└── LICENSE
+├── Main-Scripts/              → Year-wise GEE JavaScript files
+├── VIJAYAWADA_BOUNDARY/       → AOI shapefile (.shp, .shx, etc.)
+├── Outputs/                   → Final LULC & greenspace visuals
+└── README.md
 ```
 
 ---
 
-## 📂 Key Output Visualizations
+## 🖼️ Key Visual Outputs
 
 ### 🗺️ Yearly LULC Maps (2019–2024) — Random Forest
-<img src="Outputs/lulc_maps_rf_2019_2024.png" alt="LULC RF Maps" width="75%">
+
+<p align="center">
+  <img src="Outputs/lulc_maps_rf_2019_2024.png" alt="LULC RF Maps" width="65%">
+</p>
 
 ---
 
-### 🗺️ Yearly LULC Maps (2019–2024) — SVM
-<img src="Outputs/lulc_maps_svm_2019_2024.png" alt="LULC SVM Maps" width="75%">
+### 🧠 Yearly LULC Maps (2019–2024) — SVM
+
+<p align="center">
+  <img src="Outputs/lulc_maps_svm_2019_2024.png" alt="LULC SVM Maps" width="65%">
+</p>
 
 ---
 
-### 🌿 Greenspace Extraction (RF)
-<img src="Outputs/greenspace_rf_2019_2024.png" alt="Greenspace RF" width="75%">
+### 🌿 Greenspace Classification — RF Model
+
+<p align="center">
+  <img src="Outputs/greenspace_rf_2019_2024.png" alt="Greenspace RF" width="60%">
+</p>
 
 ---
 
-### 🌿 Greenspace Extraction (SVM)
-<img src="Outputs/greenspace_svm_2019_2024.png" alt="Greenspace SVM" width="75%">
+### 🌿 Greenspace Classification — SVM Model
+
+<p align="center">
+  <img src="Outputs/greenspace_svm_2019_2024.png" alt="Greenspace SVM" width="60%">
+</p>
 
 ---
 
-## 📈 Greenspace Area Table (sq.km)
+## 📊 Greenspace Area Summary
 
-| Year | RF Model | SVM Model |
-|------|----------|-----------|
-| 2019 | 541.41   | 479.63    |
-| 2020 | 575.25   | 645.75    |
-| 2021 | 494.29   | 496.39    |
-| 2022 | 451.76   | 430.99    |
-| 2023 | 681.08   | 744.22    |
-| 2024 | 552.07   | 624.63    |
-
----
-
-## 📍 Study Area: Vijayawada
-
-- 📍 Location: Andhra Pradesh, India  
-- 🧭 AOI defined using a custom shapefile  
-- 🗂️ Uploaded to GEE for spatial filtering
-
-> The AOI shapefile can be found under:  
-[`VIJAYAWADA_BOUNDARY/`](./VIJAYAWADA_BOUNDARY)
+| 📅 Year | 🌱 RF Area (sq.km) | 🌱 SVM Area (sq.km) |
+|--------|--------------------|---------------------|
+| 2019   | 541.41             | 479.63              |
+| 2020   | 575.25             | 645.75              |
+| 2021   | 494.29             | 496.39              |
+| 2022   | 451.76             | 430.99              |
+| 2023   | 681.08             | 744.22              |
+| 2024   | 552.07             | 624.63              |
 
 ---
 
+## 📍 AOI: Vijayawada Boundary
 
-## 👩‍💻 Authors
-
-- **Abhinaya Chalamalasetti**  
-- **Vemuri Nikshipta**  
-- **Rajulapati Nandini**  
----
-
-## 🛠️ Tools & Tech
-
-| Tool              | Purpose                          |
-|-------------------|----------------------------------|
-| Google Earth Engine | Satellite image processing      |
-| Sentinel-2        | Multispectral satellite data     |
-| Random Forest     | Land cover classification        |
-| SVM               | Classification (comparison model)|
-| Shapefiles        | AOI definition                   |
-| PPT, Excel        | Visuals, graphs, analysis        |
+- Defined using uploaded shapefile assets
+- Used for clipping, training, and analysis  
+- 📂 See folder: `VIJAYAWADA_BOUNDARY/`
 
 ---
 
-## 📬 Feedback & Contributions
+## 👩‍💻 Contributors
 
-If you found this project helpful or inspiring:
+- 👩‍💻 **Abhinaya Chalamalasetti**
+- 👩‍💻 **Vemuri Nikshipta**
+- 👩‍💻 **Rajulapati Nandini**
+---
 
-- ⭐ Star the repo  
-- 🛠️ Fork and contribute ideas  
-- 💬 Reach out for collaborations
+## 🛠️ Tools & Technologies
 
-Let’s build smarter cities through smarter mapping! 🗺️🌱
+| 🧩 Component      | 💡 Tool Used               |
+|------------------|----------------------------|
+| Data Source      | Sentinel-2 (via GEE)       |
+| Platform         | Google Earth Engine (GEE)  |
+| Algorithms       | Random Forest, SVM         |
+| Visuals          | GEE Charts, PPT, PNG       |
+| AOI Boundary     | Custom shapefile (VJA)     |
 
 ---
 
+
+
+## 📜 License
+
+This project is part of the **EPICS initiative** at  
+🎓 *V. R. Siddhartha Engineering College (Autonomous)*  
+📚 Intended for academic and non-commercial use only.
